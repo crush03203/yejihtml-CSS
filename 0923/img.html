@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 내부 스타일 시트로 활용할 것을 권장 -->
+    <style>
+        img {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- / 
+        root 최상단 경로 
+        현재위치 
+        현재 위 상단( = 부모 )
+        alt : alternative(대안) : 이미지가 지원되지 않을 때 글자로 대체(웹 접근성)           
+    -->
+
+    <!-- 상대경로 : 현재를 기준으로 한 위치-->
+    <img src="../../images/imgs/미니언즈.jpg" alt="미니언즈.jpg" width="100px" height="100px">
+
+    <!-- 절대경로 / 내 컴퓨터 정보를 로컬로 표시할 수 없다-->
+    <img src="D:\A_TeachingMaterial\vsecodeWeb\yeji\images\imgs\" alt="절대경로이미지">
+    <!-- localhost 이후의 경로로 접근하여 -->
+    <img src=" /images/imgs/미니언즈.jpg alt = " 미니언즈.jpg" </body>
+
+</html>

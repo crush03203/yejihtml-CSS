@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            position: relative;
+            width: 100px;
+            height: 100vh;
+        }
+        #child{
+            position: ;
+        }
+    
+    
+    
+    #container::after{
+        content: "";
+        background: url(../images/1.jfif) no-repeat center/100vw 100vh;
+
+    }
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+
+<body>
+    <pre>
+        1. 이미지 위 글자가 동일한 위치에 존재하도록 만들기
+            (=> 이미지 상단에 기타 요소 추가로 검증하기)
+        2. 배경 투명처리
+        3. 브라우저 크기 변경시 이미지 사이즈도 같이 변경
+    </pre>
+    <div>
+        <h1>이미지 텍스트</h1>
+    </div>
+    <div id="container">
+        <!-- 부모영역에 background-image -->
+        <div id="child">
+            <!--부모를 기준으로 absolute 처리 -->
+            글자가 동일한 위치에 존재하기
+        </div>
+    </div>
+
+    <div>
+        <img src="../images/1.jfif" alt="">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #wrapper {
+            height: 300px;
+            position: relative; /*투명설정 시 부모요소의 상태를 변경하고 기준으로 사용*/
+
+        }
+        #content {
+            height: 100%; /*높이 속성에서 %단위를 사용시 단독 적용되지 않음*/
+            border: 3px dotted red;
+            /* url(경로) position/size repeat attchment */
+            /* background-image: url(../images/OIP.jfif); */
+            /* 축약 - url(경로) position/size repeat attchment */
+            /* background: url(../images/OIP.jfif) left top/100px 80px no-repeat; */
+            /* opacity: 0.3; */
+        }
+        #content::before {
+            content: "";
+            background-image: url(../images/OIP.jfif)
+                             ,url(../images/imgs/미니언즈.jpg);
+                             
+            background-repeat: no-repeat;
+            background-size: 100px 100px, 50px 50px;
+            background-position: left top, right bottom;                 
+            opacity: 0.3;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+        피카츄라이츄파이리꼬부기버터풀야도란?ㅌㅌㅌㅌㅌ또가스
+
+        </div>
+    </div>
+</body>
+
+</html>

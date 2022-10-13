@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* id선택자- id 선택자가 우선순위가 높다 */
+        #tkv {
+            font-size:  40px;
+            color: red; /*우선순위가 높기 때문에 선순위 작성 되었지만 적용되었음*/        
+        }
+
+        /*요소(태그)선택자*/
+        div{
+            color: rgb(89, 18, 221);
+            background-color: black ;
+        }
+        /*#50 { 적용이 안되는 이유는 속성 시작은 영문 소문자로 해야하기때문에 
+            font-size:  20px;
+            color: orange;
+        }*/
+        #o0 {  
+            font-size:  20px;
+            color: orange;
+        }
+
+        /* class 선택자 */
+        div.mgg { /*and의 형태로 div이면서 class=mgg인 요소만 선택*/
+            color: aqua;
+            background-color: orange;
+        }
+        /* 전체선택자 */
+        *{
+            border: 1px solid pink;
+        }
+        p, .mgg{
+            font-style:  italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- id는 페이지 내 유일한 값으로 지정하고, class는 중복 가능 -->
+    <div class="mgg">마징가</div>
+    <div id="tkv">태권v</div>
+    <div>그랜다이저</div>
+    <div id="o0">손오공</div>
+    <p class="mgg">나는 p태그</p>
+    <div>손오공</div>
+    <div class="mgg">완다</div>
+    <!-- 클래스 이름은 id랑 다르게 중복으로 사용가능하며 .으로 호출이 가능 -->
+
+
+</body>
+</html>
